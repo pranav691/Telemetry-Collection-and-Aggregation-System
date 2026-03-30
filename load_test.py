@@ -4,7 +4,7 @@ import threading
 import psutil
 import random
 
-SERVER_IP = "127.0.0.1"
+SERVER_IP = "10.42.235.207"
 SERVER_PORT = 5000
 
 def run_client(client_id):
