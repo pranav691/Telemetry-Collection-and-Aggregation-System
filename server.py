@@ -14,7 +14,7 @@ server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 # FIX: avoid port reuse error
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-server_socket.bind(("127.0.0.1", 5000))
+server_socket.bind(("0.0.0.0", 5000))
 
 print("Smart Telemetry Server Started...\n")
 
