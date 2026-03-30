@@ -16,6 +16,10 @@ while True:
 
     sequence += 1
 
+    if random.random() < LOSS_PROBABILITY:
+        print(f"[DROPPED] Packet {sequence}")
+        continue
+    
     # REAL system data
     cpu_usage = psutil.cpu_percent(interval=None)                # Since our system is designed for high-rate telemetry over UDP, we avoided blocking calls like interval=1. Using interval=None allows continuous, non-blocking data transmission, which better reflects real-world telemetry systems where timeliness is prioritized over perfect accuracy.
     memory_usage = psutil.virtual_memory().percent
