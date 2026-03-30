@@ -3,7 +3,7 @@ import time
 import random
 import psutil  
 
-SERVER_IP = "192.168.1.10"   
+SERVER_IP = "10.42.235.207"
 SERVER_PORT = 5000
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
